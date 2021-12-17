@@ -1,0 +1,144 @@
+#tasks-container{
+
+  &>h2{
+    padding: 15px;
+    border-radius: 15px;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+    background-color: #026873;
+    background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+    linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+    background-size: 13px, 29px, 37px, 53px;
+  }
+  margin-top: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+
+
+  .task{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+
+    &:after{
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 250px;
+      bottom: 0;
+      background: white;
+      transform: translateY(20px);
+      background: linear-gradient(to right,transparent,white,transparent);
+    }
+
+    h3{
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: white;
+      color: black;
+      font-size: 2.5rem;
+      text-align: center;
+      margin: 0;
+      //max-width: 80vw;
+      //@media only screen and (max-width: 800px) {
+      //
+      //}
+    }
+
+    button{
+      background: transparent;
+      *{
+        color: white;
+
+        transition: 500ms;
+        -webkit-transition: 500ms;
+        -moz-transition: 500ms;
+        -o-transition: 500ms;
+      }
+
+      outline: none;
+      border: 1px solid white;
+
+      cursor: pointer;
+
+      width: 50px;
+      height: 50px;
+
+      font-size: 2rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 100%;
+
+
+      &:hover{
+        *{
+          color: cadetblue;
+        }
+      }
+    }
+  }
+}
+
+.finished{
+  opacity: .4;
+  text-decoration: line-through;
+}
+
+.AwesomeBtn{
+  background: transparent;
+  *{
+    color: white;
+
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+  }
+
+  outline: none;
+  border: 1px solid white;
+
+  cursor: pointer;
+
+  width: 50px;
+  height: 50px;
+
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 100%;
+
+
+  &:hover{
+    *{
+      color: cadetblue;
+    }
+  }
+}
+
+#backbtn{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+#deletebtn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}

@@ -1,0 +1,108 @@
+#tasks-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+#tasks-container > h2 {
+  padding: 15px;
+  border-radius: 15px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background-color: #026873;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.07) 50%, transparent 50%), linear-gradient(90deg, rgba(255, 255, 255, 0.13) 50%, transparent 50%), linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.17) 50%), linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.19) 50%);
+  background-size: 13px, 29px, 37px, 53px;
+}
+#tasks-container .task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+#tasks-container .task:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 250px;
+  bottom: 0;
+  background: white;
+  transform: translateY(20px);
+  background: linear-gradient(to right, transparent, white, transparent);
+}
+#tasks-container .task h3 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: black;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+}
+#tasks-container .task button {
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+#tasks-container .task button * {
+  color: white;
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+}
+#tasks-container .task button:hover * {
+  color: cadetblue;
+}
+
+.finished {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+.AwesomeBtn {
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.AwesomeBtn * {
+  color: white;
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+}
+.AwesomeBtn:hover * {
+  color: cadetblue;
+}
+
+#backbtn {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+#deletebtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/*# sourceMappingURL=Tasks.css.map */
